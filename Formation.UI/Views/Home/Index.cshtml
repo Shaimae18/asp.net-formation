@@ -1,0 +1,86 @@
+﻿@model IEnumerable<Formation.Data.Formation>
+@{
+    ViewBag.Title = "Acceuil";
+}
+
+    <div>
+
+        <div class="jumbotron" style="background-color : black">
+            <h1 style="color: orange; text-align:center;">Avis Formation</h1>
+            <p class="lead" style="color : orange; text-align:center;">Choisissez la meilleur formation</p>
+
+        </div>
+        <div style="background-color:white">
+            <div class="row" style="display:flex">
+                @foreach (var formation in Model)
+                {
+                    <div class="col-md-3 col-border">
+                        <h4 style="color : orange;">@formation.Nom</h4>
+
+                        @if (formation.Avis.Count > 0)
+                        {
+                            var note = @formation.Avis.Sum(a => a.Note) / @formation.Avis.Count;
+                            <p>
+
+                                @for (int i = 0; i < Math.Ceiling(note); i++)
+                                {
+                                    <span class="glyphicon glyphicon-star" style="color:orange"></span>
+                                }
+                                @Html.Raw(note) / 5
+                            </p>
+
+                        }
+                        else
+                        {
+                            <p>Aucun avis</p>
+                        }
+
+                        <p>
+                            @formation.Description
+
+                        </p>
+
+                    </div>
+                }
+            </div>
+           
+                <div style="border-top:solid whitesmoke">
+                    <div class="row">
+
+
+                        <div class="col-md-12" style="text-align: center">
+                            <h2>Pour quoi utiliser Avis Formation ?</h2>
+                            <p>Bénéfice formateur</p>
+                        </div>
+                    </div>
+                    <div class="row" style="text-align: center">
+                        <div class="col-md-6">
+                            <h2 class="glyphicon glyphicon-shopping-cart" style="color:orange;text-align: center"></h2>
+                            <h4>Conversion</h4>
+                            <p>Améliorer votre taux de conversion</p>
+                        </div>
+                        <div class="col-md-6 ">
+                            <h2 class="glyphicon glyphicon-fullscreen" style="color:orange;text-align: center"></h2>
+                            <h4>Visiblité</h4>
+                            <p>Améliorer votre visiblité</p>
+                        </div>
+                    </div>
+                    <div class="row" style="text-align: center">
+                        <div class="col-md-6">
+                            <h2 class="glyphicon glyphicon-tree-deciduous" style="color:orange;text-align: center"></h2>
+                            <h4>Fidélisation</h4>
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="glyphicon glyphicon-heart-empty" style="color:orange;text-align: center"></h2>
+                            <h4>Confiance</h4>
+                        </div>
+                    </div>
+                </div>
+          
+
+        </div>
+        @section Scripts
+{
+            <link href="~/Content/FormationStyle.css" rel="stylesheet" />
+        }
+    </div>

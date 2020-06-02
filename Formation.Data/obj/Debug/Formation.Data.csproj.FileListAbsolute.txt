@@ -1,0 +1,14 @@
+C:\Users\probook\source\repos\Formation.UI\Formation.Data\bin\Debug\Formation.Data.dll.config
+C:\Users\probook\source\repos\Formation.UI\Formation.Data\bin\Debug\Formation.Data.dll
+C:\Users\probook\source\repos\Formation.UI\Formation.Data\bin\Debug\Formation.Data.pdb
+C:\Users\probook\source\repos\Formation.UI\Formation.Data\bin\Debug\EntityFramework.dll
+C:\Users\probook\source\repos\Formation.UI\Formation.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\probook\source\repos\Formation.UI\Formation.Data\bin\Debug\EntityFramework.xml
+C:\Users\probook\source\repos\Formation.UI\Formation.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\probook\source\repos\Formation.UI\Formation.Data\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\probook\source\repos\Formation.UI\Formation.Data\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\probook\source\repos\Formation.UI\Formation.Data\obj\Debug\Formation.Data.csprojAssemblyReference.cache
+C:\Users\probook\source\repos\Formation.UI\Formation.Data\obj\Debug\Formation.Data.csproj.CoreCompileInputs.cache
+C:\Users\probook\source\repos\Formation.UI\Formation.Data\obj\Debug\Formation.Data.csproj.CopyComplete
+C:\Users\probook\source\repos\Formation.UI\Formation.Data\obj\Debug\Formation.Data.dll
+C:\Users\probook\source\repos\Formation.UI\Formation.Data\obj\Debug\Formation.Data.pdb
